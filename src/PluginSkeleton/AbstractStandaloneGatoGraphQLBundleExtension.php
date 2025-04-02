@@ -30,9 +30,9 @@ abstract class AbstractStandaloneGatoGraphQLBundleExtension extends AbstractGato
      * Install plugin setup data after a commercial license
      * has been activated
      */
-    public function isLicenseJustActivated(): void
+    public function anyCommercialLicenseJustActivated(): void
     {
-        parent::isLicenseJustActivated();
+        parent::anyCommercialLicenseJustActivated();
 
         // Do on "init" so the taxonomies have been registered
         add_action(
